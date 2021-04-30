@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <top>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="115.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@spendingtrackerImage.jpg" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </top>
+   <left>
+      <BorderPane prefHeight="360.0" prefWidth="421.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="64.0" layoutY="67.0" text="username:" textFill="#05b4e4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="139.0" text="password:" textFill="#05b4e4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userName" layoutX="197.0" layoutY="65.0" prefHeight="27.0" prefWidth="160.0" promptText="username" />
+            <PasswordField fx:id="password" layoutX="194.0" layoutY="137.0" prefHeight="27.0" prefWidth="164.0" promptText="password" />
+            <Button fx:id="button" layoutX="177.0" layoutY="202.0" mnemonicParsing="false" onAction="#userlog" prefHeight="40.0" prefWidth="72.0" text="login" />
+            <Label fx:id="error" layoutX="187.0" layoutY="26.0" textFill="#fc0000" />
+         </children>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="54.0" layoutY="89.0" text="username:" textFill="#0a9be4">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="54.0" layoutY="151.0" text="password:" textFill="#0a9be4">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userName" layoutX="174.0" layoutY="87.0" promptText="abc123" />
+                  <PasswordField fx:id="password" layoutX="174.0" layoutY="149.0" promptText="password" />
+                  <Button fx:id="button" layoutX="179.0" layoutY="219.0" mnemonicParsing="false" onAction="#userlog" text="login" textFill="#06a4e8">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="error" layoutX="130.0" layoutY="62.0" prefHeight="17.0" prefWidth="163.0" textFill="#f20101" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </left>
+</BorderPane>
